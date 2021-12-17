@@ -1,0 +1,18 @@
+example of creating a new html element
+code: 
+//create reset button
+        
+        //create the variable containing the element (button) and put the element inside
+        
+        var reset = document.createElement("button"); 
+        
+        //define the button/variable's properties (id, innerText & onclick)
+        
+        reset.id="resetBtnId";
+        reset.onclick=resetFunct();
+        reset.innerText="RESET"
+        
+        //putting the element in a existing div in our html using the div's id
+        
+        var div = document.getElementById("btnDivId");
+        div.appendChild(reset);
